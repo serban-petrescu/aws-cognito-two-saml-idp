@@ -1,0 +1,9 @@
+version: "3.0"
+services:
+  web:
+    build: ./keycloak
+    ports:
+      - 8080:8080
+    environment:
+      COGNITO_URN: urn:amazon:cognito:sp:us-east-1_aCFSrS8TE
+      COGNITO_URL: https://poc-two-ups-162174280605.auth.us-east-1.amazoncognito.com/saml2/idpresponse
